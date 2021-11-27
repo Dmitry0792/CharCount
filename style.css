@@ -1,33 +1,36 @@
 body {
-  background: url(img/bg1.jpg);
-  background-color: #fff;
-  max-width: 960px;
   margin: 0 auto;
+  background: url(img/bg1.jpg) center no-repeat;
+  background-color: gray;
+  max-width: 960px;
   color: #494d4e;
 }
 
-*{
+* {
   outline: none !important;
+  box-sizing: border-box;
 }
 
 h1 {
-  font-size:  40px;
-  text-align: center;
   margin-bottom: 2px;
-  
+  font-size: 40px;
+  text-align: center;
 }
 
 h2 {
+  margin-top: 15px;
   font-size: 25px;
   text-align: center;
-  margin-top: 15px;
 }
 
 .buttons {
+  margin-top: 12px;
+  margin-right: 20px;
   display: flex;
 }
 
 .btn1 {
+  margin-left: 400px;
   border-radius: 5px;
   border: 0;
   cursor: pointer;
@@ -37,12 +40,10 @@ h2 {
   color: #330033;
   font-size: 12px;
   text-transform: uppercase;
-  margin-top: 12px;
-  margin-left: 400px;
-  
 }
 
 .btn2 {
+  margin-left: 25px;
   border-radius: 5px;
   border: 0;
   cursor: pointer;
@@ -52,8 +53,6 @@ h2 {
   color: #330033;
   font-size: 12px;
   text-transform: uppercase;
-  margin-top: 12px;
-  margin-left: 25px;
 }
 
 button:active {
@@ -64,7 +63,16 @@ button:hover {
   border: 1px solid #330033;
 }
 
+.win_in {
+  margin: 40px auto;
+  max-width: 700px;
+  width: 700px;
+  height: 280px;
+  justify-content: center;
+}
+
 #input-in {
+  border: 0;
   border-radius: 5px;
   padding: 10px 15px;
   max-width: 700px;
@@ -72,30 +80,50 @@ button:hover {
   font-size: 16px;
   background-color: #330033;
   color: #fff;
-  opacity: .6;
+  opacity: 0.6;
   resize: none;
 }
 
 .win_out {
-  width: 700px;
-  height: auto;
-  background-color:  #330033;
-  border-radius: 5px;
   margin-top: 30px;
   padding: 15px 15px;
+  width: 700px;
+  height: auto;
+  background-color: #330033;
+  border-radius: 5px;
   color: #fff;
-  opacity: .6;
+  opacity: 0.6;
   word-wrap: break-word;
 }
 
-.win_in {
-  margin: 0 auto;
-  max-width: 700px;
-  width: 700px;
-  height: 280px;
-  justify-content: center;
+
+
+
+
+
+/*==============   Media   =================*/
+
+@media (max-width: 1200px) {
+  
 }
- /*     my color
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*     my color
 
     #494d4e
     #330033

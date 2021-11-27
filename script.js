@@ -12,17 +12,17 @@ btn1.onclick = function () {
 };
 
 btn2.onclick = function () {
-  let b = wordsCounter(inputIn.value);
+  let b = charCounter(inputIn.value);
   divOut.innerHTML = b;
 };
 document.addEventListener("keydown", function (e) {
   if (e.keyCode === 13) {
-    let b = wordsCounter(inputIn.value);
+    let b = charCounter(inputIn.value);
     divOut.innerHTML = b;
   }
 });
 
-const wordsCounter = (str1) => {
+const charCounter = (str1) => {
   let i = 0;
   const arr = [];
   let res = "";
@@ -44,5 +44,5 @@ const findSym = (str, sym) => {
       count1++;
     }
   }
-  return sym + ' - ' + count1;
+  return sym + ' - ' + count1 + ' ';
 };
