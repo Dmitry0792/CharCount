@@ -34,15 +34,19 @@ const charCounter = (str1) => {
     }
   }
 
-  return arr;
+  return arr.join(' | ');
 };
 
 const findSym = (str, sym) => {
   let count1 = 0;
   for (let i = 0; i < str.length; i++) {
     if (str[i] === sym) {
+      
       count1++;
     }
   }
-  return sym + ' - ' + count1 + ' ';
+  if(sym === ' ') {
+    sym = "space";
+  }
+  return sym + ' - ' + count1;
 };
