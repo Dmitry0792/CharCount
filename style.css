@@ -103,10 +103,27 @@ button:hover {
 
 /*==============   Media   =================*/
 
-@media (max-width: 1200px) {
-  
-}
+@media (max-width: 760px) {
+  * {
+    outline: none !important;
+    box-sizing: border-box;
+  }
 
+  .win_in {
+    margin: 40px auto;
+    margin-bottom: 20px;
+    max-width: 500px;
+    height: 280px;
+    justify-content: center;
+  }
+  .win_out {
+    width: 500px;
+    
+  }
+  .btn1 {
+    margin-left: 200px;
+  }
+}
 
 
 
