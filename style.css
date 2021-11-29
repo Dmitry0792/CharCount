@@ -2,7 +2,6 @@ body {
   margin: 0 auto;
   background: url(img/bg1.jpg) center no-repeat;
   background-color: gray;
-  max-width: 960px;
   color: #494d4e;
 }
 
@@ -35,7 +34,7 @@ h2 {
   border: 0;
   cursor: pointer;
   width: 140px;
-  height: 30px;
+  height: 27px;
   background-color: #fff;
   color: #330033;
   font-size: 12px;
@@ -48,7 +47,7 @@ h2 {
   border: 0;
   cursor: pointer;
   width: 140px;
-  height: 30px;
+  height: 27px;
   background-color: #fff;
   color: #330033;
   font-size: 12px;
@@ -66,16 +65,13 @@ button:hover {
 .win_in {
   margin: 40px auto;
   max-width: 700px;
-  width: 700px;
-  height: 280px;
-  justify-content: center;
 }
+
 
 #input-in {
   border: 0;
   border-radius: 5px;
   padding: 10px 15px;
-  max-width: 700px;
   width: 100%;
   font-size: 16px;
   background-color: #330033;
@@ -87,13 +83,21 @@ button:hover {
 .win_out {
   margin-top: 30px;
   padding: 15px 15px;
-  width: 700px;
+  width: 100%;
   height: auto;
   background-color: #330033;
   border-radius: 5px;
   color: #fff;
   opacity: 0.6;
   word-wrap: break-word;
+}
+
+hr {
+  width: 80%;
+  margin-top: 40px;;
+  border: none;
+  background-color:#494d4e;
+  height: 1px;
 }
 
 
@@ -104,44 +108,76 @@ button:hover {
 /*==============   Media   =================*/
 
 @media (max-width: 760px) {
-  body {
-    max-width: 760px;
-  }
   .win_in {
-    margin: 40px auto;
-    margin-bottom: 20px;
-    max-width: 500px;
-    height: 280px;
-    justify-content: center;
+    max-width: 85%;
   }
+
+  #input-in {
+    height: 150px;
+  }
+
   .win_out {
-    width: 500px;
+    width: 100%;
     
   }
   .btn1 {
-    margin-left: 200px;
+    margin-left: 60%;
+    height: 25px;
+    width: 120px;
+    font-size: 10px;
+  }
+
+  .btn2 {
+    height: 25px;
+    width: 120px;
+    font-size: 10px;
   }
 }
 
 @media (max-width: 450px) {
+  h1 {
+    font-size: 30px;
+  }
 
   h2 {
-    font-size: 24px;
-    width: 450px;
+    font-size: 20px;
   }
+
   .win_in {
-    margin: 40px auto;
-    margin-bottom: 20px;
-    max-width: 300px;
-    height: 280px;
-    justify-content: center;
+    max-width: 85%;
   }
+
+  #input-in {
+    padding: 5px 7px;
+    height: 130px;
+  }
+
   .win_out {
-    width: 300px;
-    
+    margin-top: 15px;
+    padding: 10px 10px;
+    width: 100%;
   }
+
+  .buttons {
+    margin-top: 8px;
+  }
+
   .btn1 {
-    margin-left: 100px;
+    margin-left: 20%;
+    height: 20px;
+    width: 100px;
+    font-size: 8px;
+  }
+
+  .btn2 {
+    height: 20px;
+    width: 100px;
+    font-size: 8px;
+  }
+
+  hr {
+    width: 80%;
+    margin-top: 20px;
   }
 }
 
