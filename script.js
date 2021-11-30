@@ -1,12 +1,11 @@
-let inputIn = document.getElementById("input-in");
+let inputIn = document.getElementById('input_in');
 let btn1 = document.querySelector('.btn1');
 let btn2 = document.querySelector('.btn2');
-let divIn = document.querySelector('.div_in');
-let divOut = document.querySelector(".win_out");
+let divOut = document.querySelector('.win_out');
 
 btn1.onclick = function () {
   let a = '';
-  divIn.value = a;
+  inputIn.value = a;
   divOut.innerHTML = a;
   
 };
@@ -23,10 +22,9 @@ document.addEventListener("keydown", function (e) {
 });
 
 const charCounter = (str1) => {
-  let i = 0;
   const arr = [];
   let res = "";
-  for (; i < str1.length; i++) {
+  for (let i = 0; i < str1.length; i++) {
     res = findSym(str1, str1[i]);
 
     if (!arr.includes(res)) {

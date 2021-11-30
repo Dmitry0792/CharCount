@@ -1,6 +1,7 @@
 body {
   margin: 0 auto;
-  background: url(img/bg1.jpg) center no-repeat;
+  background: url(img/bg1.jpg) center no-repeat fixed;
+  background-size: cover;
   background-color: gray;
   color: #494d4e;
 }
@@ -20,6 +21,23 @@ h2 {
   margin-top: 15px;
   font-size: 25px;
   text-align: center;
+}
+
+.win_in {
+  margin: 40px auto;
+  max-width: 700px;
+}
+
+#input_in {
+  border: 0;
+  border-radius: 5px;
+  padding: 10px 15px;
+  width: 100%;
+  font-size: 16px;
+  background-color: #330033;
+  color: #fff;
+  opacity: 0.6;
+  resize: none;
 }
 
 .buttons {
@@ -62,48 +80,23 @@ button:hover {
   border: 1px solid #330033;
 }
 
-.win_in {
-  margin: 40px auto;
-  max-width: 700px;
-}
-
-
-#input-in {
-  border: 0;
-  border-radius: 5px;
-  padding: 10px 15px;
-  width: 100%;
-  font-size: 16px;
-  background-color: #330033;
-  color: #fff;
-  opacity: 0.6;
-  resize: none;
-}
-
 .win_out {
   margin-top: 30px;
   padding: 15px 15px;
   width: 100%;
-  height: auto;
   background-color: #330033;
   border-radius: 5px;
   color: #fff;
   opacity: 0.6;
-  word-wrap: break-word;
 }
 
 hr {
   width: 80%;
-  margin-top: 40px;;
+  margin-top: 40px;
   border: none;
-  background-color:#494d4e;
+  background-color: #494d4e;
   height: 1px;
 }
-
-
-
-
-
 
 /*==============   Media   =================*/
 
@@ -112,13 +105,12 @@ hr {
     max-width: 85%;
   }
 
-  #input-in {
+  #input_in {
     height: 150px;
   }
 
   .win_out {
     width: 100%;
-    
   }
   .btn1 {
     margin-left: 60%;
@@ -147,7 +139,7 @@ hr {
     max-width: 85%;
   }
 
-  #input-in {
+  #input_in {
     padding: 5px 7px;
     height: 130px;
   }
@@ -180,21 +172,6 @@ hr {
     margin-top: 20px;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*     my color
 
