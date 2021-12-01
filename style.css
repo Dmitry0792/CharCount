@@ -1,10 +1,10 @@
 body {
   margin: 0 auto;
-  background: url(img/bg1.jpg) center no-repeat fixed;
-  background-size: cover;
-  background-color: gray;
+  background: linear-gradient(to right, #e8cbc0, #636fa4); 
   color: #494d4e;
+  font-family: 'Source Code Pro', monospace;
 }
+
 
 * {
   outline: none !important;
@@ -12,14 +12,16 @@ body {
 }
 
 h1 {
-  margin-bottom: 2px;
+  margin: 0;
   font-size: 40px;
+  font-weight: 400;
   text-align: center;
 }
 
 h2 {
   margin-top: 15px;
   font-size: 25px;
+  font-weight: 400;
   text-align: center;
 }
 
@@ -29,6 +31,7 @@ h2 {
 }
 
 #input_in {
+  margin-top: 30px;
   border: 0;
   border-radius: 5px;
   padding: 10px 15px;
@@ -55,7 +58,9 @@ h2 {
   height: 27px;
   background-color: #fff;
   color: #330033;
+  font-family: 'Source Code Pro', monospace;
   font-size: 12px;
+  font-weight: 400;
   text-transform: uppercase;
 }
 
@@ -68,7 +73,9 @@ h2 {
   height: 27px;
   background-color: #fff;
   color: #330033;
+  font-family: 'Source Code Pro', monospace;
   font-size: 12px;
+  font-weight: 400;
   text-transform: uppercase;
 }
 
@@ -91,8 +98,8 @@ button:hover {
 }
 
 hr {
-  width: 80%;
-  margin-top: 40px;
+  width: 85%;
+  margin-top: 60px;
   border: none;
   background-color: #494d4e;
   height: 1px;
@@ -102,10 +109,12 @@ hr {
 
 @media (max-width: 760px) {
   .win_in {
-    max-width: 85%;
+    margin-top: 15px;
+    max-width: 90%;
   }
 
   #input_in {
+    margin-top: 20px;
     height: 150px;
   }
 
@@ -124,15 +133,23 @@ hr {
     width: 120px;
     font-size: 10px;
   }
+
+  hr {
+    margin-top: 20px;
+  }
+
 }
 
 @media (max-width: 450px) {
   h1 {
     font-size: 30px;
+    line-height: 1.1;
   }
 
   h2 {
+    margin-top: 10px;
     font-size: 20px;
+    line-height: 1.1;
   }
 
   .win_in {
@@ -140,6 +157,7 @@ hr {
   }
 
   #input_in {
+    margin-top: 20px;
     padding: 5px 7px;
     height: 130px;
   }
@@ -168,8 +186,7 @@ hr {
   }
 
   hr {
-    width: 80%;
-    margin-top: 20px;
+    margin-top: 40px;
   }
 }
 
@@ -178,4 +195,11 @@ hr {
     #494d4e
     #330033
 
+
+    background: url(img/bg1.jpg) center no-repeat fixed;
+  background-size: cover;
+  background-color: gray;
+
+
+  background: linear-gradient(to right, #c9d6ff, #e2e2e2);
  */
