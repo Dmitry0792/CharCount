@@ -1,50 +1,53 @@
-let inputIn = document.getElementById('input_in');
-let btn1 = document.querySelector('.btn1');
-let btn2 = document.querySelector('.btn2');
-let divOut = document.querySelector('.win_out');
+let inputIn = document.getElementById("input_in");
+let btn1 = document.querySelector(".btn1");
+let btn2 = document.querySelector(".btn2");
+let divOut = document.querySelector(".win_out");
 
 btn1.onclick = function () {
-  let a = '';
-  inputIn.value = a;
-  divOut.innerHTML = a;
-  
+  let clear = "";
+  inputIn.value = clear;
+  divOut.innerHTML = clear;
 };
 
 btn2.onclick = function () {
-  let b = charCounter(inputIn.value);
-  divOut.innerHTML = b;
+  divOut.innerHTML = charCounter(inputIn.value);
 };
+
 document.addEventListener("keydown", function (e) {
   if (e.keyCode === 13) {
-    let b = charCounter(inputIn.value);
-    divOut.innerHTML = b;
+    divOut.innerHTML = charCounter(inputIn.value);
   }
 });
 
-const charCounter = (str1) => {
+
+
+const charCounter = (str1) => {          
+
+  if (str1.length === 0) {
+    return "";
+  }
   const arr = [];
   let res = "";
   for (let i = 0; i < str1.length; i++) {
-    res = findSym(str1, str1[i]);
+    res = countSym(str1, str1[i]);
 
     if (!arr.includes(res)) {
       arr.push(res);
     }
   }
 
-  return arr.join(' | ');
+  return arr.sort().join(" | ") + ` |  TOTAL:  ${str1.length}`;
 };
 
-const findSym = (str, sym) => {
-  let count1 = 0;
+const countSym = (str, sym) => {
+  let count = 0;
   for (let i = 0; i < str.length; i++) {
     if (str[i] === sym) {
-      
-      count1++;
+      count++;
     }
   }
-  if(sym === ' ') {
+  if (sym === " ") {
     sym = "space";
   }
-  return sym + ' - ' + count1;
+  return sym + " - " + count;
 };
