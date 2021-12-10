@@ -19,15 +19,13 @@ document.addEventListener("keydown", function (e) {
   }
 });
 
-
-
-const charCounter = (str1) => {          
-
+const charCounter = (str0) => {
+  let str1 = str0.replace(/\s/g, "");
+  const arr = [];
+  let res = "";
   if (str1.length === 0) {
     return "";
   }
-  const arr = [];
-  let res = "";
   for (let i = 0; i < str1.length; i++) {
     res = countSym(str1, str1[i]);
 
@@ -45,9 +43,6 @@ const countSym = (str, sym) => {
     if (str[i] === sym) {
       count++;
     }
-  }
-  if (sym === " ") {
-    sym = "space";
   }
   return sym + " - " + count;
 };
